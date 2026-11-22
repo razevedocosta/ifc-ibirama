@@ -1,23 +1,61 @@
 # 🐳 Prática de Laboratório: Containers, Imagens e Docker CLI
 
-**Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama  
+**Instituição:** IFC — Instituto Federal Catarinense (Campus Ibirama)  
 **Disciplina:** Hardware e Sistemas Operacionais  
 **Professor:** Msc. Rodrigo Azevedo  
 
 ---
 
 ## 🎯 Objetivos da Prática
+
 Ao concluir este roteiro, você será capaz de:
-1. Executar e gerenciar o ciclo de vida de containers via linha de comando (`Docker CLI`).
-2. Compreender na prática o isolamento de processos (`Namespaces`), limites de hardware (`cgroups`) e a efemeridade do sistema de arquivos em camadas (`OverlayFS`).
-3. Construir uma imagem personalizada utilizando um `Dockerfile`.
-4. Persistir dados utilizando **Volumes** e orquestrar múltiplos serviços com **Docker Compose**.
+1. Instalar e validar o ambiente Docker na máquina local.
+2. Executar e gerenciar o ciclo de vida de containers via linha de comando (`Docker CLI`).
+3. Compreender na prática o isolamento de processos (`Namespaces`), limites de hardware (`cgroups`) e a efemeridade do sistema de arquivos em camadas (`OverlayFS`).
+4. Construir uma imagem personalizada utilizando um `Dockerfile`.
+5. Persistir dados utilizando **Volumes** e orquestrar múltiplos serviços com **Docker Compose**.
 
 ---
 
-## 🛠️ Pré-requisitos
-* Ambiente Linux (ou Windows/macOS com **Docker Desktop** em execução).
-* Acesso ao terminal (`Bash`, `PowerShell` ou `Zsh`) e navegador web.
+## ⚙️ Parte 0: Instalação e Configuração Inicial do Docker
+
+Antes de executar os comandos no terminal, siga o passo a passo abaixo conforme o sistema operacional da sua máquina (caso o laboratório já possua o Docker instalado, pule para a etapa **0.3**).
+
+### 0.1. Instalação no Windows (Docker Desktop)
+1. **Acesso ao Site Oficial:** Abra o navegador e acesse [https://www.docker.com](https://www.docker.com).
+2. **Download:** Clique no botão **"Download Docker Desktop"** e selecione a versão correspondente à arquitetura do seu processador (geralmente **Download for Windows - AMD64**).
+3. **Execução do Instalador:**
+   * Dê um duplo clique no arquivo `Docker Desktop Installer.exe` baixado.
+   * Na tela de configuração, mantenha marcada a opção **"Use WSL 2 instead of Hyper-V"** (recomendado) e clique em **Ok**.
+   * Aguarde a conclusão da instalação e clique em **Close and restart** (se solicitado reiniciar o computador).
+4. **Inicialização:**
+   * Abra o menu Iniciar, procure por **Docker Desktop** e execute-o.
+   * Aceite os termos de serviço (*Docker Subscription Service Agreement*).
+   * Você pode clicar em **"Continue without signing in"** (não é obrigatório criar conta para usar localmente).
+   * Aguarde o ícone da baleia na barra de tarefas parar de animar e exibir o status **Engine running** (verde).
+
+### 0.2. Instalação no Linux (Ubuntu / Debian)
+1. **Acesso à Documentação Oficial:** Caso queira consultar outras distribuições, acesse [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/).
+2. **Instalação Rápida via Terminal:** Abra o terminal (`Ctrl + Alt + T`) e execute os comandos abaixo para instalar o Docker Engine e o plugin do Compose:
+   ```bash
+   sudo apt update
+   sudo apt install -y docker.io docker-compose-v2
+   ```
+3. **Permissão sem `sudo` (Opcional, mas recomendado):** Adicione seu usuário ao grupo `docker` para evitar digitar senha a cada comando:
+   ```bash
+   sudo usermod -aG docker $USER
+   newgrp docker
+   ```
+
+### 0.3. Validação da Instalação (Teste `hello-world`)
+Abra o terminal (`PowerShell`, `Prompt de Comando` ou `Bash`) e execute os dois comandos abaixo para confirmar que o **Docker Client** e o **Docker Daemon** estão ativos e se comunicando:
+
+```bash
+docker --version
+docker run hello-world
+```
+
+* Se aparecer a mensagem `"Hello from Docker! This message shows that your installation appears to be working correctly."`, seu ambiente está pronto para a prática!
 
 ---
 
@@ -177,6 +215,7 @@ volumes:
 Elabore um documento em **PDF** contendo:
 1. **Identificação:** Nome completo, turma e data.
 2. **Evidências (Prints de Tela):**
+   * Terminal exibindo o sucesso do `docker run hello-world` na Parte 0.
    * Navegador exibindo `localhost:8080` alterado na Parte 1.2.
    * Saída do terminal com `docker stats` na Parte 2.
    * Navegador exibindo sua imagem customizada em `localhost:8081` na Parte 3.
