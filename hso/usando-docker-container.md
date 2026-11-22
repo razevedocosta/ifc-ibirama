@@ -2,7 +2,7 @@
 
 **Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama  
 **Disciplina:** Hardware e Sistemas Operacionais  
-**Professor:** Msc. Rodrigo Azevedo (`rodrigo.costa1@ifc.edu.br`)  
+**Professor:** Msc. Rodrigo Azevedo  
 
 ---
 
