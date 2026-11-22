@@ -1,7 +1,7 @@
 # 🖥️ Trabalho Prático Avaliativo: Sistema de Controle de Laboratório de Informática
 
 **Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama  
-**Disciplina:** Hardware e Sistemas Operacionais  
+**Disciplina:** Fundamentos de Informática  
 **Professor:** Prof. Msc. Rodrigo Azevedo  
 
 ---
