@@ -1,4 +1,4 @@
-# 🖥️ Trabalho Prático Avaliativo: Sistema de Controle de Laboratório de Informática
+# 🖥️ Trabalho Prático: Sistema de Controle de Laboratório de Informática
 
 **Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama  
 **Disciplina:** Fundamentos de Informática  
