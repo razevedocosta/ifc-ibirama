@@ -1,8 +1,8 @@
 # 🖥️ Trabalho Prático Avaliativo: Sistema de Controle de Laboratório de Informática
 
-![Disciplina](https://img.shields.io/badge/Disciplina-Hardware_e_Sistemas_Operacionais-0284c7)
-![Ferramenta](https://img.shields.io/badge/Ferramenta-Excel_%7C_Google_Sheets-10b981)
-![Status](https://img.shields.io/badge/Atividade-Avaliativa_(10%2C0_pts)-f59e0b)
+**Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama  
+**Disciplina:** Hardware e Sistemas Operacionais
+**Professor:** Prof. Msc. Rodrigo Azevedo  
 
 ---
 
