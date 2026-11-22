@@ -1,4 +1,4 @@
-# 💻 Prática de Laboratório: SQL (DDL, DML, DQL e Transações ACID)
+# 💻 Prática de SQL (DDL, DML, DQL e Transações ACID)
 
 **Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama  
 **Disciplina:** Banco de Dados  
@@ -18,7 +18,7 @@ Nesta prática em laboratório, você irá aplicar os conceitos estudados em sal
 
 ---
 
-## 🛠️ Passo 0: Preparando o Ambiente (Setup Inicial)
+## 🛠️ Preparando o Ambiente (Setup Inicial)
 
 1. Acesse o site **[sqliteonline.com](https://sqliteonline.com/)** no seu navegador.
 2. No menu lateral esquerdo, mantenha selecionada a opção padrão **SQLite** (ou selecione **PostgreSQL**).
