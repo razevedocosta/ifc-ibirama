@@ -1,4 +1,4 @@
-# 🏗️ Trabalho Prático em Sala: Projeto Arquitetural do Sistema
+# 🏗️ Trabalho Prático: Projeto Arquitetural do Sistema
 
 * **Instituição:** Instituto Federal Catarinense (IFC) — Campus Ibirama
 * **Disciplina:** Engenharia de Software
